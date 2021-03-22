@@ -1,5 +1,6 @@
 module.exports = {
-    port: process.env.APP_PORT || 3000,
+    port: process.env.APP_PORT || 5000,
+    ip: process.env.APP_IP || '0.0.0.0',
     databases: {
         mongo: {
             uri: process.env.MONGO_URI || 'mongodb://localhost:27017/xmen',

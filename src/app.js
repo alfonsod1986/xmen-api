@@ -2,13 +2,13 @@ const Config = require('./conf');
 const init = require('./middlewares');
 const dbConnection = require('./db/mongo');
 
-const startServer = async ({ port, databases }) => {
+const startServer = async ({ port, ip, databases }) => {
     const { mongo } = databases;
     const app = await init();
 
     await dbConnection(mongo);
     
-    app.listen(port, err => {
+    app.listen(port, ip, err => {
         if (err) {
             console.log(err);
             return;
