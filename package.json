@@ -2,11 +2,11 @@
   "name": "xmen-api",
   "version": "1.0.0",
   "description": "Xmen API exam",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "start": "node src/app.js",
-    "dev": "nodemon --exec babel-node src/app.js"
+    "start": "node index.js",
+    "dev": "nodemon --exec babel-node index.js"
   },
   "jest": {
     "transform": {
