@@ -1,6 +1,6 @@
-const Config = require('./src/conf');
-const init = require('./src/middlewares');
-const dbConnection = require('./src/db/mongo');
+const Config = require('./conf');
+const init = require('./middlewares');
+const dbConnection = require('./db/mongo');
 
 const startServer = async ({ port, ip, databases }) => {
     const { mongo } = databases;
