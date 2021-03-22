@@ -6,7 +6,7 @@ const startServer = async ({ port, ip, databases }) => {
     const { mongo } = databases;
     const app = await init();
 
-    await dbConnection(mongo);
+    //await dbConnection(mongo);
     
     app.listen(port, ip, err => {
         if (err) {
